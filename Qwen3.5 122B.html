@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VPN Services List - Complete Comparison</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        wood: {
+                            50: '#faf6f1',
+                            100: '#f2e6d9',
+                            200: '#e6cbb0',
+                            300: '#d4a87f',
+                            400: '#c6864f',
+                            500: '#a65f29',
+                            600: '#854a21',
+                            700: '#663a1e',
+                            800: '#52311b',
+                            900: '#432a19',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(139, 69, 19, 0.1);
+        }
+        .dark .glass-panel {
+            background: rgba(62, 39, 35, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .hover-row:hover {
+            background: rgba(166, 95, 41, 0.05);
+        }
+        .dark .hover-row:hover {
+            background: rgba(255, 255, 255, 0.05);
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f2e6d9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #a65f29;
+            border-radius: 4px;
+        }
+        .dark ::-webkit-scrollbar-track {
+            background: #3e2723;
+        }
+        .dark ::-webkit-scrollbar-thumb {
+            background: #c6864f;
+        }
+    </style>
+</head>
+<body class="bg-wood-50 dark:bg-wood-900 text-wood-900 dark:text-wood-100 transition-colors duration-300 min-h-screen">
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 glass-panel shadow-sm border-b border-wood-200 dark:border-wood-800">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex flex-col md:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-wood-600 to-wood-800 dark:from-wood-400 dark:to-wood-600 flex items-center justify-center text-white shadow-lg">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                    </svg>
+                </div>
+                <div>
+                    <h1 class="text-2xl font-bold bg-gradient-to-r from-wood-700 to-wood-900 dark:from-wood-300 dark:to-wood-100 bg-clip-text text-transparent">VPN Services List</h1>
+                    <p class="text-sm text-wood-600 dark:text-wood-400">All VPN Companies with Plans & Official Websites (USD + PKR)</p>
+                </div>
+            </div>
+            
+            <div class="flex items-center gap-3">
+                <div class="relative">
+                    <input type="text" id="searchInput" placeholder="Search VPN..." 
+                        class="pl-10 pr-4 py-2 rounded-full border border-wood-300 dark:border-wood-700 bg-white dark:bg-wood-800 focus:ring-2 focus:ring-wood-500 outline-none w-64 transition-all">
+                    <svg class="w-5 h-5 absolute left-3 top-2.5 text-wood-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                    </svg>
+                </div>
+                
+                <button onclick="toggleTheme()" class="p-2 rounded-full bg-wood-200 dark:bg-wood-800 hover:bg-wood-300 dark:hover:bg-wood-700 transition-colors" title="Toggle Theme">
+                    <svg id="sunIcon" class="w-5 h-5 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                    </svg>
+                    <svg id="moonIcon" class="w-5 h-5 block dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 py-8">
+        
+        <!-- Stats Bar -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+            <div class="glass-panel rounded-xl p-4 border border-wood-200 dark:border-wood-800">
+                <div class="text-3xl font-bold text-wood-800 dark:text-wood-200" id="totalCount">58</div>
+                <div class="text-sm text-wood-600 dark:text-wood-400">Total VPN Services</div>
+            </div>
+            <div class="glass-panel rounded-xl p-4 border border-wood-200 dark:border-wood-800">
+                <div class="text-3xl font-bold text-green-600 dark:text-green-400">$2 / Rs. 560</div>
+                <div class="text-sm text-wood-600 dark:text-wood-400">Cheapest Monthly (IVPN)</div>
+            </div>
+            <div class="glass-panel rounded-xl p-4 border border-wood-200 dark:border-wood-800">
+                <div class="text-3xl font-bold text-blue-600 dark:text-blue-400">Rs. 13,160</div>
+                <div class="text-sm text-wood-600 dark:text-wood-400">Exchange Rate: $1 ≈ Rs. 280</div>
+            </div>
+        </div>
+
+        <!-- Table Container -->
+        <div class="glass-panel rounded-2xl shadow-xl overflow-hidden border border-wood-200 dark:border-wood-800">
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="bg-wood-100 dark:bg-wood-800 text-wood-900 dark:text-wood-100 border-b border-wood-200 dark:border-wood-700">
+                            <th class="p-4 font-bold text-sm uppercase tracking-wider w-1/4">VPN Name</th>
+                            <th class="p-4 font-bold text-sm uppercase tracking-wider w-1/2">Plan Price / Duration</th>
+                            <th class="p-4 font-bold text-sm uppercase tracking-wider w-1/4">Official Website</th>
+                        </tr>
+                    </thead>
+                    <tbody id="vpnTableBody" class="divide-y divide-wood-200 dark:divide-wood-800">
+                    </tbody>
+                </table>
+            </div>
+            <div id="noResults" class="hidden p-8 text-center text-wood-500 dark:text-wood-400">
+                <div class="text-4xl mb-2">🔍</div>
+                <p>No results found. Try different search terms.</p>
+            </div>
+        </div>
+
+        <!-- Note -->
+        <div class="mt-6 p-4 rounded-lg bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 text-amber-800 dark:text-amber-200 text-sm">
+            <span class="font-bold">Note:</span> All prices shown in USD and PKR (Pakistani Rupee). Exchange rate used: $1 ≈ Rs. 280. Prices may vary. Please verify on official websites before purchasing.
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-12 py-6 text-center text-wood-600 dark:text-wood-400 text-sm border-t border-wood-200 dark:border-wood-800">
+        <p>Last Updated: 2026</p>
+    </footer>
+
+    <script>
+        // Conversion rate: $1 = Rs. 280 PKR
+        const PKR_RATE = 280;
+        
+        // Helper function to format PKR price
+        function toPKR(usdPrice) {
+            return `Rs. ${Math.round(parseFloat(usdPrice.replace(/[^0-9.]/g, '')) * PKR_RATE).toLocaleString()}`;
+        }
+
+        // Helper function to create price display with PKR
+        function createPriceDisplay(priceStr) {
+            // Extract dollar amounts and convert each
+            const parts = priceStr.split(/[,\s]+/).filter(p => p.trim());
+            const convertedParts = [];
+            
+            for (let part of parts) {
+                if (part.includes('$') || part.includes('€') || part.includes('£')) {
+                    // Keep original and add PKR equivalent
+                    convertedParts.push(part);
+                    
+                    // Also show approximate PKR for dollar amounts
+                    const match = part.match(/[\d.]+/);
+                    if (match && (part.includes('$'))) {
+                        convertedParts.push(`<span class="text-xs text-wood-500">${toPKR(match[0])}</span>`);
+                    }
+                } else {
+                    convertedParts.push(part);
+                }
+            }
+            return convertedParts.join(', ');
+        }
+
+        // Simplified price converter that works better
+        function convertPrice(priceStr) {
+            // Find all numbers with $ or plain numbers followed by duration words
+            const matches = priceStr.match(/\$([\d.]+)/g);
+            if (!matches) return priceStr;
+            
+            let result = priceStr;
+            matches.forEach(match => {
+                const amount = parseFloat(match.replace('$', ''));
+                const pkrAmount = Math.round(amount * PKR_RATE).toLocaleString();
+                result = result.replace(match, `${match} (${pkrAmount})`);
+            });
+            return result;
+        }
+
+        // VPN Data (Alphabetically Sorted)
+        const vpnData = [
+            { name: "Air VPN", price: "99€/3 Years", website: "airvpn.org" },
+            { name: "AVG VPN", price: "$135/3 Years ($37,800)", website: "avg.com/vpn" },
+            { name: "Avira", price: "$78/1 Year (Rs. 21,840)", website: "avira.com" },
+            { name: "BitDefender", price: "$35/1 Year (Rs. 9,800)", website: "bitdefender.com" },
+            { name: "Browsec", price: "$48/2 Years (Rs. 13,440)", website: "browsec.com" },
+            { name: "Cactus VPN", price: "$70/32 Months (Rs. 19,600)", website: "cactusvpn.com" },
+            { name: "CyberGhost VPN", price: "$57/2 Years (Rs. 15,960)", website: "cyberghostvpn.com" },
+            { name: "Express VPN", price: "$78.18/28 Months (Rs. 21,890)", website: "expressvpn.com" },
+            { name: "Fastest VPN", price: "$20/2 Years ($40/Lifetime)", website: "fastestvpn.com" },
+            { name: "Fly VPN", price: "$120/2 Years (Rs. 33,600)", website: "flyvpn.com" },
+            { name: "Hide.me", price: "$70/2 Years (Rs. 19,600)", website: "hide.me" },
+            { name: "HideMyAss VPN", price: "$108/3 Years (Rs. 30,240)", website: "hidemyass.com" },
+            { name: "Hotspot Shield", price: "$8/Month (Rs. 2,240)", website: "hotspotshield.com" },
+            { name: "iProVPN", price: "$6/M, $20/1 Year (Rs. 5,600), $40/5 Years (Rs. 11,200)", website: "iprovpn.com" },
+            { name: "iShosting", price: "$7/Month (Rs. 1,960)", website: "ishosting.com" },
+            { name: "IPVanish VPN", price: "$47/1 Year (Rs. 13,160)", website:  "ipvanish.com/ps/pricing", unlimited: true },
+            { name: "IVPN", price: "1 Week $2 (Rs. 560), 1 Month $6 (Rs. 1,680), 1 Year $60 (Rs. 16,800), 2 Years $100 (Rs. 28,000), 3 Years $140 (Rs. 39,200)", website: "ivpn.net" },
+            { name: "Ivacy VPN", price: "$54/2 Years ($102/5 Years)", website: "ivacy.com" },
+            { name: "LE-VPN", price: "$80/3 Years (Rs. 22,400)", website: "le-vpn.com" },
+            { name: "Namecheap VPN", price: "$12/1 Year (Rs. 3,360), $68/3 Years (Rs. 19,040)", website: "namecheap.com/vpn" },
+            { name: "Netflix VPN", price: "$60/2 Years (Rs. 16,800)", website: "netflixvpn.com" },
+            { name: "NextDNS.io", price: "$2/M (Rs. 560), $20/Year (Rs. 5,600)", website: "nextdns.io" },
+            { name: "Nord VPN", price: "$82/2 Years (Rs. 22,960)", website: "nordvpn.com" },
+            { name: "NordLayer VPN", price: "$8/Month (Rs. 2,240)", website: "nordlayer.com" },
+            { name: "OVPN", price: "$60/1 Year (Rs. 16,800), $152/3 Years (Rs. 42,560)", website: "ovpn.com" },
+            { name: "Panda VPN", price: "$40/1 Year (Rs. 11,200)", website: "pandavpnpro.com" },
+            { name: "Plus.Award-VPN", price: "£49/1 Year (~Rs. 16,240)", website: "awardvpn.com" },
+            { name: "Private Internet Access", price: "$79/3 Years (Rs. 22,120)", website: "privateinternetaccess.com" },
+            { name: "Private VPN", price: "$72/3 Years (Rs. 20,160)", website: "privatevpn.com" },
+            { name: "Privado VPN", price: "$16/1 Year (Rs. 4,480), $27/2 Years (Rs. 7,560)", website: "privadovpn.com" },
+            { name: "Proton VPN", price: "$72/2 Years (Rs. 20,160)", website: "protonvpn.com" },
+            { name: "Pure VPN", price: "$58/27 Months (Rs. 16,240)", website: "purevpn.com" },
+            { name: "SafeShell VPN", price: "$17/3 Months (Rs. 4,760), $60/1 Year (Rs. 16,800)", website: "safeshellvpn.com" },
+            { name: "Smarty DNS", price: "$50/1 Year (Rs. 14,000)", website: "smartydns.com" },
+            { name: "Smart DNS Proxy", price: "$7/M, $18/3 Months, $55/1 Year, $70/2 Years, $200/Lifetime", website: "smartdnsproxy.com" },
+            { name: "Strong VPN", price: "$48/1 Year (Rs. 13,440)", website: "strongvpn.com" },
+            { name: "Surfshark VPN", price: "$53.73/27 Months (Rs. 15,044)", website: "surfshark.com/pricing", unlimited: true },
+            { name: "Switch VPN", price: "$60/1 Year (Rs. 16,800), $90/1 Year (Rs. 25,200)", website: "switchvpn.net" },
+            { name: "TorGuard VPN", price: "$60/1 Year (Rs. 16,800)", website: "torguard.net" },
+            { name: "Trust.Zone", price: "$56/2 Years (Rs. 15,680)", website: "trust.zone" },
+            { name: "TunnelBear", price: "$48/1 Year (Rs. 13,440)", website: "tunnelbear.com" },
+            { name: "Turbo VPN", price: "$90/27 Months (Rs. 25,200)", website: "turbovpn.com" },
+            { name: "Unlocator", price: "$70/2 Years (Rs. 19,600)", website: "unlocator.com" },
+            { name: "UTunnel.io", price: "$6/M (Rs. 1,680)", website: "utunnel.io" },
+            { name: "VeePN", price: "$56/28 Months (Rs. 15,680)", website: "veepn.com" },
+            { name: "VPN Unlimited", price: "$60/1 Year (Rs. 16,800), $162/3 Years (Rs. 45,360)", website: "vpnunlimitedapp.com" },
+            { name: "Vuze VPN", price: "$72/1 Year (Rs. 20,160)", website: "vuzevpn.com" },
+            { name: "Vypr VPN", price: "$72/2 Years (Rs. 20,160)", website: "vyprvpn.com" },
+            { name: "Windscribe", price: "$70/1 Year (Rs. 19,600)", website: "windscribe.com" },
+            { name: "X VPN", price: "$3/M (Rs. 840), $70/2 Years (Rs. 19,600)", website: "xvpn.io" },
+            { name: "Zoog VPN", price: "$60/2 Years (Rs. 16,800)", website: "zoogvpn.com" }
+        ];
+
+        // Populate Table
+        function populateTable(data) {
+            const tbody = document.getElementById('vpnTableBody');
+            const noResults = document.getElementById('noResults');
+            
+            tbody.innerHTML = '';
+            
+            if (data.length === 0) {
+                noResults.classList.remove('hidden');
+                return;
+            } else {
+                noResults.classList.add('hidden');
+            }
+            
+            data.forEach((vpn, index) => {
+                const row = document.createElement('tr');
+                row.className = 'hover-row transition-colors border-b border-wood-100 dark:border-wood-800 last:border-0';
+                
+                const unlimitedBadge = vpn.unlimited ? 
+                    '<span class="ml-2 inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200">Unlimited Devices</span>' : '';
+                
+                row.innerHTML = `
+                    <td class="p-4 font-medium text-wood-900 dark:text-wood-100">
+                        <div class="flex items-center">
+                            <span class="font-semibold">${vpn.name}</span>
+                            ${unlimitedBadge}
+                        </div>
+                    </td>
+                    <td class="p-4 text-wood-700 dark:text-wood-300 font-mono text-sm leading-relaxed">
+                        ${vpn.price}
+                    </td>
+                    <td class="p-4">
+                        <a href="https://${vpn.website}" target="_blank" rel="noopener noreferrer" 
+                           class="inline-flex items-center gap-2 text-wood-600 dark:text-wood-400 hover:text-wood-900 dark:hover:text-wood-200 transition-colors group">
+                            <span class="text-sm underline decoration-wood-300 hover:decoration-wood-600">${vpn.website}</span>
+                            <svg class="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                            </svg>
+                        </a>
+                    </td>
+                `;
+                tbody.appendChild(row);
+            });
+        }
+
+        // Filter Function
+        function filterTable() {
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+            const filtered = vpnData.filter(vpn => 
+                vpn.name.toLowerCase().includes(searchTerm) || 
+                vpn.price.toLowerCase().includes(searchTerm) ||
+                vpn.website.toLowerCase().includes(searchTerm)
+            );
+            populateTable(filtered);
+            document.getElementById('totalCount').textContent = filtered.length;
+        }
+
+        // Theme Toggle
+        function toggleTheme() {
+            if (document.documentElement.classList.contains('dark')) {
+                document.documentElement.classList.remove('dark');
+                localStorage.theme = 'light';
+            } else {
+                document.documentElement.classList.add('dark');
+                localStorage.theme = 'dark';
+            }
+        }
+
+        // Check system preference
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+
+        // Initialize
+        populateTable(vpnData);
+        
+        // Search event listener
+        document.getElementById('searchInput').addEventListener('keyup', filterTable);
+    </script>
+</body>
+</html>
